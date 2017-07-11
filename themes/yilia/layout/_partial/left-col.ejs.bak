@@ -2,10 +2,10 @@
 <div class="overlay" style="background: <%= theme.style && theme.style.header ? theme.style.header : defaultBg %>"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
+		
 		<a href="/" class="profilepic">
 			<img src="<%=theme.avatar%>" class="js-avatar show">
 		</a>
-		<img src="<%=theme.avatar%>" class="js-avatar show" style="width: 100%;height: 100%;opacity: 1;">
 		<hgroup>
 		  <h1 class="header-author"><a href="/"><%=theme.author%></a></h1>
 		</hgroup>
@@ -33,6 +33,9 @@
 					<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><i class="icon-<%= i %>"></i></a>
 		        <%}%>
 			</div>
+		</nav>
+		<nav class="header-music">
+			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height=52 src="//music.163.com/outchain/player?type=2&id=480680&auto=1&height=32"></iframe>
 		</nav>
 	</header>		
 </div>
